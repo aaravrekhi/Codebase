@@ -1,0 +1,87 @@
+Test Plan for task_list.c
+
+1. Purpose of Testing:
+	- Verify the correctness and functionality of major functions in task_list.c, including boundary conditions.
+
+2. Test Cases:
+	a. Test task_list_construct
+		i. Input: size = 5
+		ii. Expected Output: A non-null task_list structure with task_count = 0 and task_size = 5.
+
+	b. Test task_list_destruct
+   		i. Input: Valid task_list structure with allocated memory.
+   		ii. Expected Output: Free the allocated memory without errors.
+
+	c. Test task_list_number_entries with a non-empty task_list
+   		i. Input: task_list with task_count = 3
+   		ii. Expected Output: Return the correct task_count (3).
+
+	d. Test task_list_add (Boundary condition)
+  		i. Input: task_list with task_count = 5, task_size = 5, new task with unique information.
+      		ii. Expected Output: Task is not added, and task_count remains 5.
+
+   	e. Test task_list_access (Boundary condition)
+      		i. Input: task_list with task_count > 0, index = task_count.
+      		ii. Expected Output: NULL (Index out of bounds).
+
+   	f. Test task_list_remove (Boundary condition)
+      		i. Input: task_list with task_count > 0, index = task_count.
+      		ii. Expected Output: NULL (Index out of bounds).
+
+   	g. Test task_list_lookup_first_priority
+      		i. Input: task_list with tasks of varying priorities, a specific priority to search.
+      		ii. Expected Output: Return the index of the first task with the specified priority.
+
+	h. Test task_list_lookup_id with an existing task ID
+   		i. Input: task_list with tasks, valid task ID to search.
+   		ii. Expected Output: Return the index of the task with the specified ID.
+
+	i. Test task_list_lookup_id with a non-existing task ID
+   		i. Input: task_list with tasks, task ID that does not exist in the list.
+   		ii. Expected Output: Return -1 indicating the task ID is not found.
+
+	j. Test task_list_access_priority with an existing priority
+   		i. Input: task_list with tasks of varying priorities, a specific priority to access.
+		ii. Expected Output: Return the task with the specified priority.
+
+	k. Test task_list_access_priority with a non-existing priority
+   		i. Input: task_list with tasks, priority that does not exist in the list.
+   		ii. Expected Output: Return NULL indicating the priority is not found.
+
+	l. Test task_list_access_id with a valid task ID
+   		i. Input: task_list with tasks, valid task ID to access.
+   		ii. Expected Output: Return the task with the specified ID.
+
+	m. Test task_list_access_id with an invalid task ID
+   		i. Input: task_list with tasks, invalid task ID that does not exist in the list.
+   		ii. Expected Output: Return NULL indicating the task ID is not found.
+
+	n. Test task_list_remove_id with an existing task ID
+   		i. Input: task_list with tasks, valid task ID to remove.
+   		ii. Expected Output: Return the removed task and update the task_list.
+
+	o. Test task_list_remove_id with a non-existing task ID
+   		i. Input: task_list with tasks, task ID that does not exist in the list.
+   		ii. Expected Output: Return NULL indicating the task ID is not found, and task_list remains unchanged.
+
+   	p. Test task_list_determine_runable
+      		i. Input: task_list with QUEUED and BLOCKED tasks, valid nargs and args.
+      		ii. Expected Output: Return the index of a runnable task.
+
+   	q. Test task_list_set_state
+      		i. Input: task_list with tasks in different states, valid task ID, new state.
+      		ii. Expected Output: Task state is updated to the new state.
+
+   	r. Test task_list_remove_finished
+      		i. Input: task_list with FINISHED tasks.
+      		ii. Expected Output: A new task_list containing finished tasks, and the original task_list is updated.
+
+   	s. Test task_list_schedule
+      		i. Input: task_list with tasks in different states, valid priority or task ID.
+      		ii. Expected Output: A task is scheduled and its state is set to RUNNING.
+
+3. Test Execution:
+   	- Execute each test case and observe the actual output.
+
+4. Expected Results:
+   	- Compare the actual output with the expected output for each test case.

@@ -1,0 +1,66 @@
+The list size is 10. Possible commands:
+INSERT
+FIND id
+REMOVE id
+UPDATE id state
+PRINT
+STATS
+SCHEDULE id priority
+DETERMINE
+CLEAN
+QUIT
+Number records: 0
+List empty
+Priority:Wallclocktime:Number of Args:Arg 0:
+Inserted: 0
+Number records: 1
+List has 1 records
+   0: Task ID: 0 priority = 1 state = QUEUED
+Priority:Wallclocktime:Number of Args:Arg 0:
+Inserted: 1
+Number records: 2
+List has 2 records
+   0: Task ID: 0 priority = 1 state = QUEUED
+   1: Task ID: 1 priority = 1 state = QUEUED
+Removed: 1
+Task ID: 1
+     priority = 1
+     state     = QUEUED
+     time = 1.000000e+00
+     nargs = 1
+     args = { 1, }
+Number records: 1
+List has 1 records
+   0: Task ID: 0 priority = 1 state = QUEUED
+Did not remove: 1
+Number records: 1
+List has 1 records
+   0: Task ID: 0 priority = 1 state = QUEUED
+Priority:Wallclocktime:Number of Args:Arg 0:Arg 1:
+Inserted: 2
+Number records: 2
+List has 2 records
+   0: Task ID: 0 priority = 1 state = QUEUED
+   1: Task ID: 2 priority = 2 state = QUEUED
+Priority:Wallclocktime:Number of Args:Arg 0:Arg 1:Arg 2:
+Inserted: 3
+Number records: 3
+List has 3 records
+   0: Task ID: 0 priority = 1 state = QUEUED
+   1: Task ID: 2 priority = 2 state = QUEUED
+   2: Task ID: 3 priority = 3 state = QUEUED
+Priority:Wallclocktime:Number of Args:Arg 0:Arg 1:Arg 2:Arg 3:
+Inserted: 4
+List has 4 records
+   0: Task ID: 0 priority = 1 state = QUEUED
+   1: Task ID: 2 priority = 2 state = QUEUED
+   2: Task ID: 3 priority = 3 state = QUEUED
+   3: Task ID: 4 priority = 4 state = QUEUED
+Removing 0 finshed tasks
+Number records: 4
+List has 4 records
+   0: Task ID: 0 priority = 1 state = QUEUED
+   1: Task ID: 2 priority = 2 state = QUEUED
+   2: Task ID: 3 priority = 3 state = QUEUED
+   3: Task ID: 4 priority = 4 state = QUEUED
+Goodbye

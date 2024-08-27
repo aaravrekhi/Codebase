@@ -1,0 +1,45 @@
+The list size is 10. Possible commands:
+INSERT
+FIND id
+REMOVE id
+UPDATE id state
+PRINT
+STATS
+SCHEDULE id priority
+DETERMINE
+CLEAN
+QUIT
+Number records: 0
+List empty
+Priority:Wallclocktime:Number of Args:Arg 0:
+Inserted: 0
+Priority:Wallclocktime:Number of Args:Arg 0:Arg 1:
+Inserted: 1
+Priority:Wallclocktime:Number of Args:Arg 0:Arg 1:Arg 2:
+Inserted: 2
+Number records: 3
+Removed: 1
+Task ID: 1
+     priority = 2
+     state     = QUEUED
+     time = 2.000000e+00
+     nargs = 2
+     args = { 2,  2, }
+List has 2 records
+   0: Task ID: 0 priority = 1 state = QUEUED
+   1: Task ID: 2 priority = 3 state = QUEUED
+Removed: 0
+Task ID: 0
+     priority = 1
+     state     = QUEUED
+     time = 1.000000e+00
+     nargs = 1
+     args = { 1, }
+Removed: 2
+Task ID: 2
+     priority = 3
+     state     = QUEUED
+     time = 3.000000e+00
+     nargs = 3
+     args = { 3,  3,  3, }
+Goodbye

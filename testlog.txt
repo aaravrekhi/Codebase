@@ -1,0 +1,78 @@
+Test Log for task_list.c
+
+2. Test Cases:
+	a. Test task_list_construct
+   		i. Input: size = 5
+		ii. Actual Output: task_count = 0; task_size = 5;
+	
+	b. Test task_list_destruct
+   		i. Input: Valid task_list structure with allocated memory.
+   		ii. Actual Output: task_count = 0; task_size = 5;
+
+	c. Test task_list_number_entries with a non-empty task_list
+   		i. Input: task_list with task_count = 3
+   		ii. Actual Output: task_count = 3;
+
+	d. Test task_list_add (Boundary condition)
+   		i .Input: task_list with task_count = 5, task_size = 5, new task with unique information.
+   		ii. Actual Output: task_count = 5; int task_id;
+
+	e. Test task_list_access (Boundary condition)
+   		i. Input: task_list with task_count > 0, index = task_count.
+   		ii. Actual Output: task_id = NULL; index = NULL;
+
+	f. Test task_list_remove (Boundary condition)
+   		i. Input: task_list with task_count > 0, index = task_count.
+   		ii. Actual Output: task_id = NULL; index = NULL;
+
+	g. Test task_list_lookup_first_priority
+   		i. Input: task_list with tasks of varying priorities, a specific priority to search.
+		ii. Actual Output: index = 0;
+
+	h. Test task_list_lookup_id with an existing task ID
+   		i. Input: task_list with tasks, valid task ID to search.
+   		ii. Actual Output: index = task_id:
+
+	i. Test task_list_lookup_id with a non-existing task ID
+   		i. Input: task_list with tasks, task ID that does not exist in the list.
+   		ii. Actual Output: task_id = NULL;
+
+	j. Test task_list_access_priority with an existing priority
+   		i. Input: task_list with tasks of varying priorities, a specific priority to access.
+		ii. Actual Output: index = task_id;
+
+	k. Test task_list_access_priority with a non-existing priority
+   		i. Input: task_list with tasks, priority that does not exist in the list.
+   		ii. Actual Output: index = NULL;
+
+	l. Test task_list_access_id with a valid task ID
+   		i. Input: task_list with tasks, valid task ID to access.
+   		ii. Actual Output: index = task_id;
+
+	m. Test task_list_access_id with an invalid task ID
+   		i. Input: task_list with tasks, invalid task ID that does not exist in the list.
+   		ii. Actual Output: task_id = NULL;
+
+	n. Test task_list_remove_id with an existing task ID
+   		i. Input: task_list with tasks, valid task ID to remove.
+   		ii. Actual Output: return index; task_count = task_count - 1;
+
+	o. Test task_list_remove_id with a non-existing task ID
+   		i. Input: task_list with tasks, task ID that does not exist in the list.
+   		ii. Actual Output: task_id = NULL;
+
+	p. Test task_list_determine_runable
+   		i. Input: task_list with QUEUED and BLOCKED tasks, valid nargs and args.
+   		ii. index = task_id;
+
+	q. Test task_list_set_state
+   		i. Input: task_list with tasks in different states, valid task ID, new state.
+   		ii. task_ptr = state;
+
+	r. Test task_list_remove_finished
+   		i. Input: task_list with FINISHED tasks.
+   		ii. Actual Output: (list_ptr->task_count) = (rm->task_size) - 1;
+
+	s. Test task_list_schedule
+   		i. Input: task_list with tasks in different states, valid priority or task ID.
+   		ii. Actual Output: state = RUNNING;
