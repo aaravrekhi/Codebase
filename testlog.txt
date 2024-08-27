@@ -1,0 +1,187 @@
+Lab2 list size is 20. Possible commands:
+List: INSERT
+FIND id
+REMOVE id
+UPDATE id state
+SCHEDULE id priority
+DETERMINE
+REVERSE
+PRINT
+Queue      : ADDTAIL; RMHEAD; PRINTHEAD; PRINTQ
+           : STATS; QUIT
+Did not find: 2
+Did not remove: 3
+Did not find task to schedule...
+Number of Args:Arg 0:Arg 1:Arg 2:No runable tasks.
+Removing 0 finished tasks
+List reversed, new order: Descending
+List empty
+Queue empty, did not remove
+Queue is empty
+Queue empty
+Number records: 0, Order: Descending
+Number records in queue: 0
+UNKNOWN COMMAND: 
+Priority:Wallclocktime:Number of Args:Arg 0:Arg 1:Arg 2:
+Inserted: 0
+Found: 0 at index 0
+Task ID: 0
+     priority = 4
+     state     = QUEUED
+     time = 6.000000e+00
+     nargs = 3
+     args = { 76,  3,  4, }
+Did not find: 4
+Did not find: -2
+Removed: 0
+Task ID: 0
+     priority = 4
+     state     = QUEUED
+     time = 6.000000e+00
+     nargs = 3
+     args = { 76,  3,  4, }
+Priority:Wallclocktime:Number of Args:Arg 0:
+Appended 1 onto queue
+Did not remove: -1
+Did not remove: 1
+Did not find task to schedule...
+Did not find task to schedule...
+Number of Args:Arg 0:Arg 1:No runable tasks.
+Removing 0 finished tasks
+List reversed, new order: Ascending
+List empty
+Deleted head with task id and priority: 1 3
+Priority:Wallclocktime:Number of Args:Arg 0:Arg 1:
+Inserted: 2
+Queue is empty
+Queue empty
+Priority:Wallclocktime:Number of Args:Arg 0:
+Inserted: 3
+Priority:Wallclocktime:Number of Args:Arg 0:
+Inserted: 4
+Priority:Wallclocktime:Number of Args:Arg 0:Arg 1:
+Inserted: 5
+Priority:Wallclocktime:Number of Args:Arg 0:Arg 1:Arg 2:
+Inserted: 6
+Priority:Wallclocktime:Number of Args:Arg 0:
+Inserted: 7
+Priority:Wallclocktime:Number of Args:Arg 0:Arg 1:Arg 2:Arg 3:Arg 4:
+Inserted: 8
+Priority:Wallclocktime:Number of Args:Arg 0:
+Inserted: 9
+Priority:Wallclocktime:Number of Args:Arg 0:Arg 1:Arg 2:Arg 3:Arg 4:
+Inserted: 10
+Priority:Wallclocktime:Number of Args:Arg 0:
+Inserted: 11
+List has 8 records
+   0: Task ID: 2 priority = 0 state = QUEUED
+   1: Task ID: 3 priority = 1 state = QUEUED
+   2: Task ID: 4 priority = 2 state = QUEUED
+   3: Task ID: 5 priority = 3 state = QUEUED
+   4: Task ID: 6 priority = 4 state = QUEUED
+   5: Task ID: 7 priority = 5 state = QUEUED
+   6: Task ID: 8 priority = 6 state = QUEUED
+   7: Task ID: 9 priority = 7 state = QUEUED
+Number records: 8, Order: Ascending
+Number records in queue: 0
+Priority:Wallclocktime:Number of Args:Arg 0:
+Inserted: 12
+Priority:Wallclocktime:Number of Args:Arg 0:Arg 1:Arg 2:Arg 3:
+Inserted: 13
+Priority:Wallclocktime:Number of Args:Arg 0:
+Rejected: 14
+UNKNOWN COMMAND: 
+Did not find: 0
+Found: 4 at index 2
+Task ID: 4
+     priority = 2
+     state     = QUEUED
+     time = 2.000000e+00
+     nargs = 1
+     args = { 65, }
+Found: 10 at index 8
+Task ID: 10
+     priority = 8
+     state     = QUEUED
+     time = 8.000000e+00
+     nargs = 1
+     args = { 34098, }
+List has 10 records
+   0: Task ID: 2 priority = 0 state = QUEUED
+   1: Task ID: 3 priority = 1 state = QUEUED
+   2: Task ID: 4 priority = 2 state = QUEUED
+   3: Task ID: 5 priority = 3 state = QUEUED
+   4: Task ID: 6 priority = 4 state = QUEUED
+   5: Task ID: 7 priority = 5 state = QUEUED
+   6: Task ID: 8 priority = 6 state = QUEUED
+   7: Task ID: 9 priority = 7 state = QUEUED
+   8: Task ID: 10 priority = 8 state = QUEUED
+   9: Task ID: 11 priority = 9 state = QUEUED
+Number records: 10, Order: Ascending
+Number records in queue: 0
+Did not remove: 0
+Removed: 5
+Task ID: 5
+     priority = 3
+     state     = QUEUED
+     time = 3.000000e+00
+     nargs = 2
+     args = { 4,  23, }
+Priority:Wallclocktime:Number of Args:Arg 0:Arg 1:
+Inserted: 14
+Priority:Wallclocktime:Number of Args:Arg 0:
+Rejected: 15
+Removed: 10
+Task ID: 10
+     priority = 8
+     state     = QUEUED
+     time = 8.000000e+00
+     nargs = 1
+     args = { 34098, }
+Priority:Wallclocktime:Number of Args:Arg 0:Arg 1:Arg 2:
+Inserted: 16
+List has 10 records
+   0: Task ID: 2 priority = 0 state = QUEUED
+   1: Task ID: 3 priority = 1 state = QUEUED
+   2: Task ID: 4 priority = 2 state = QUEUED
+   3: Task ID: 6 priority = 4 state = QUEUED
+   4: Task ID: 13 priority = 4 state = QUEUED
+   5: Task ID: 7 priority = 5 state = QUEUED
+   6: Task ID: 8 priority = 6 state = QUEUED
+   7: Task ID: 9 priority = 7 state = QUEUED
+   8: Task ID: 11 priority = 9 state = QUEUED
+   9: Task ID: 16 priority = 84 state = QUEUED
+Number records: 10, Order: Ascending
+Number records in queue: 0
+UNKNOWN COMMAND: UDPATE 0 3
+Task 8 has state of QUEUED
+Did not find task to schedule...
+Now running task:
+Task 8 has state of RUNNING
+Task ID: 8 priority = 6 state = RUNNING
+Task ID: 4 priority = 2 state = QUEUED
+Now running task:
+Task 2 has state of RUNNING
+Task ID: 2 priority = 0 state = RUNNING
+Number of Args:Arg 0:Arg 1:Arg 2:Task 16 is runnable.
+Number of Args:Arg 0:Arg 1:No runnable tasks.
+Removing 0 finished tasks
+List reversed, new order: Descending
+List reversed, new order: Ascending
+List has 10 records
+   0: Task ID: 2 priority = 0 state = RUNNING
+   1: Task ID: 3 priority = 1 state = QUEUED
+   2: Task ID: 4 priority = 2 state = QUEUED
+   3: Task ID: 6 priority = 4 state = QUEUED
+   4: Task ID: 13 priority = 4 state = QUEUED
+   5: Task ID: 7 priority = 5 state = QUEUED
+   6: Task ID: 8 priority = 6 state = RUNNING
+   7: Task ID: 9 priority = 7 state = QUEUED
+   8: Task ID: 11 priority = 9 state = QUEUED
+   9: Task ID: 16 priority = 84 state = QUEUED
+Queue empty, did not remove
+Queue is empty
+Queue empty
+Number records: 10, Order: Ascending
+Number records in queue: 0
+Goodbye

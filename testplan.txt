@@ -1,0 +1,23 @@
+To begin testing, run the lab2 executable file with a 20 element list. 
+
+Next, try each of the possible inputs except for insert and add tail. 
+This will ensure there are no errors due to an empty list. Only Reverse 
+should have any effect. This will reorganize the list in descending order.
+Each function will print out the appropriate error message when tested 
+with an empty list.
+
+After initial testing, we will insert a new element into the list before 
+testing all the non-addition functions once more. Each time these functions
+remove an element from the list, we will simply add it back, using either 
+Insert or AddTail. This will test those two functions, while we also move 
+Quit to the end of each of these. We will then test inputs that require
+a specification of position in the list at least three times. Of all the
+times a position is specified, we will specify a valid position (0), a 
+postive position, and a negative position, at least once each.
+
+The last thing to do is fill every node in the list with values before we
+test all the functions again, this time on a full list. We will also attempt
+to add yet another node to the list, just to test and see if the list boundary
+functions are working properly. For each function, we will check the boundary 
+functions, whether it can access the first and the last element, if it can add
+to the head or the tail, and more.
